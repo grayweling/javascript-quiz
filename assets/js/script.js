@@ -19,21 +19,85 @@ var score = 0;
 
 var questions = [
     {
-        question: "Which is true",
-        a1: "false",
-        a2: "true",
-        a3: "correct",
-        a4: "treu",
+        question: "Javascript is an _____ language.",
+        a1: "Object-Oriented",
+        a2: "Object-Based",
+        a3: "Procedural",
+        a4: "None of the above",
+        ca: "answer1"
+    },
+    {
+        question: "Which of the following methods is used to access HTML elements using Javascript?",
+        a1: "getElementById()",
+        a2: "getElementsByClassName()",
+        a3: "Both A and B",
+        a4: "None of the above",
+        ca: "answer3"
+    },
+    {
+        question: "Upon encountering empty statements, what does the Javascript Interpreter do?",
+        a1: "Throw an error",
+        a2: "Ignore the statement",
+        a3: "Give a warning",
+        a4: "None of the above",
         ca: "answer2"
     },
     {
-        question: "Which is false",
-        a1: "true",
-        a2: "incorrect",
-        a3: "false",
-        a4: "fales",
-        ca: "answer3"
-    } 
+        question: "Which of the following methods can be used to display data in some form using Javascript?",
+        a1: "document.write()",
+        a2: "console.log()",
+        a3: "window.alert()",
+        a4: "All of the above",
+        ca: "answer4"
+    },
+    {
+        question: "How can a datatype be declared to be a constant type?",
+        a1: "const",
+        a2: "var",
+        a3: "let",
+        a4: "constant",
+        ca: "answer1"
+    },
+    {
+        question: "When a switch statement matches the expression with the given labels, how is the comparison done?",
+        a1: "Both the datatype and the result of the expression are compared",
+        a2: "Only the datatype of the expression is compared",
+        a3: "Only the result of the expression is compared",
+        a4: "None of the above",
+        ca: "answer1"
+    },
+    {
+        question: "What is the use of the <noscript> tag?",
+        a1: "The contents are displayed by non-JavaScript browsers",
+        a2: "Clear the cache and cookies",
+        a3: "Prevent the browser from loading the page",
+        a4: "None of the above",
+        ca: "answer1"
+    },
+    {
+        question: "What does the Javascript debugger do?",
+        a1: "It will debug all the errors in the program at runtime",
+        a2: "It acts as a breakpoint for the program",
+        a3: "It will debug errors in the current line, if any",
+        a4: "All of the above",
+        ca: "answer2"
+    },
+    {
+        question: "Which function is used to serialize an object into a JSON string?",
+        a1: "stringify()",
+        a2: "parse()",
+        a3: "convert()",
+        a4: "None of the above",
+        ca: "answer1"
+    },
+    {
+        question: "Which of the following is not a Javascript framework?",
+        a1: "Node",
+        a2: "Vue",
+        a3: "React",
+        a4: "Cassandra",
+        ca: "answer4"
+    }
 ];
 
 var initialScreen = function() {
