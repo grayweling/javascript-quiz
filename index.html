@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Javascript Quiz</title>
+</head>
+<body>
+    <header class="header">JavaScript Quiz</header>
+    
+        <!--START SCREEN PAGE-->
+        <section class="start-screen" id="start-screen">
+            <h1 class="hs-link" id="hs-link">
+                View High Scores
+            </h1>
+        
+            <article>
+                <h2 class="code-title">Coding Quiz Challenge</h2>
+                <p class="code-intro">
+                    Try to answer the following ten code-related questions within the time limit. <br>
+                    Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+                </p>
+        
+                <div class="start-button-wrapper">
+                    <button type="button" id="start-button">Start Quiz</button>
+                </div>
+            </article>
+        </section>
+        <!--END START SCREEN PAGE-->
+
+        <!--QUESTION SCREEN PAGE-->
+        <section class="question-screen-wrapper" id="question-screen">
+            <div class="timer-wrapper">
+                Time Remaining:   <span id="timer">80</span>
+            </div>
+        
+            <article class="questions-wrapper" id="question-content-wrapper"> </article>
+
+            <div class="next-button-wrapper">
+                <button type="button" id="next-button" >Next Question</button>
+            </div>
+
+            <div class="no-choice-wrapper">
+                <p>Please pick an answer!</p>
+            </div>
+
+            <div class="correct-choice-wrapper">
+                <p>Correct!</p>
+            </div>
+
+            <div class="incorrect-choice-wrapper">
+                <p>Wrong!</p>
+            </div>
+        </section>
+        <!--END QUESTIONS SCREEN PAGE-->
+        
+        <!--ALL QUESTIONS ANSWERED PAGE-->
+        <section class="end-quiz-wrapper" id="questions-answered">
+            <h1 class="quiz-over">Quiz Over!</h1>
+        
+            <div class="results-button-wrapper">
+                <button class="button" id="results">Go to Results</button>
+            </div>
+        </section>
+        <!--END ALL QUESTIONS ANSWERED PAGE-->
+        
+        <!--TIME OUT PAGE-->
+        <section class="timeout-wrapper" id="time-out">
+            <h1 class="times-up">Time's up!</h1>
+        
+            <div class="reset-button-wrapper">
+                <a href="./index.html">
+                <button class="button" id="reset">Try Again</button>
+                </a>
+            </div>
+        </section>
+        <!--END TIME OUT PAGE-->
+
+        <!--END SCREEN PAGE-->
+        <section class="end-screen" id="end-screen">
+            <div class="end-screen-wrapper">
+        
+                <h1 class="end-screen-header">Game Over!</h1>
+        
+                <div class="score-wrapper">
+                    <article class="enter-score-wrapper">
+                        <h2 id="score"></h2>
+        
+                        <form class="hs-form-wrapper">
+                            <div class="form-group">
+                                <input type="text" name="initials" placeholder="Enter Your Name" />
+                            </div>
+        
+                            <div class="form-group">
+                                <button id="submit-hs" type="click">Submit Score</button>
+                            </div>
+                        </form>
+                    </article>
+                    <!--ENTER SCORE TEST END-->
+                </div>
+        
+                <div class="restart-button-wrapper">
+                    <button class="button" id="restart">Return to Start</button>
+                </div>
+            </div>
+        </section>
+        <!--END END SCREEN PAGE-->
+            
+        <!-- HIGH SCORE PAGE -->
+        <section class="high-score-screen" id="high-score-screen">
+            <h1 class="score-header">High Scores</h1>
+        
+            <div class="highscore-list-wrapper">
+                <ol id="scores" class="hs-list"> </ol>
+            </div>
+        
+            <div class="button-wrapper">
+                <div class="restart-button-wrapper">
+                    <a href="./index.html">
+                    <button class="button" id="restart">Return to Start</button>
+                    </a>
+                </div>
+        
+                <div class="clear-button-wrapper">
+                    <button class="button" id="clear">Clear Scores</button>
+                </div>
+            </div>
+        </section>
+        <!--END HIGH SCORE PAGE-->     
+    <script src="./assets/script.js"></script>
+</body>
+</html>
