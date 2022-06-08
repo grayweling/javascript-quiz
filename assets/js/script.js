@@ -68,22 +68,22 @@ var quizStart = function () {
     titleEl.appendChild(questionEl);
       
     a1 = document.createElement("button");
-    a1.className = "answer-btn";
+    a1.className = "answer-button";
     a1.id = "answer1";
     answersEl.appendChild(a1);
 
     a2 = document.createElement("button");
-    a2.className = "answer-btn";
+    a2.className = "answer-button";
     a2.id = "answer2";
     answersEl.appendChild(a2);
 
     a3 = document.createElement("button");
-    a3.className = "answer-btn";
+    a3.className = "answer-button";
     a3.id = "answer3";
     answersEl.appendChild(a3);
 
     a4 = document.createElement("button");
-    a4.className = "answer-btn";
+    a4.className = "answer-button";
     a4.id = "answer4";
     answersEl.appendChild(a4);
 
@@ -100,7 +100,7 @@ var questionPrint = function(i) {
 
 var answerSequence = function(event) {
     if (timer > 0) {
-        if (event.target.matches(".answer-btn")) {
+        if (event.target.matches(".answer-button")) {
             var answerId = event.target.id;
             fbEl = document.createElement("p");
             fbEl.id = "feedback";
