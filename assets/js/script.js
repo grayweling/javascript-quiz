@@ -202,21 +202,25 @@ var quizEnd = function () {
 var highScoreHandler = function(event) {
     event.preventDefault();
     var initialsInput = document.querySelector("input[name='initials']").value;
-    // check if value is empty string
+
     if (!initialsInput) {
         alert("You need to enter initials to continue!")
         return false;    
     }
+
     if (initialsInput.length > 4) {
         document.getElementById("initials").value = '';
         alert("Initials can't be longer than 4 characters");
         return false;
     }
+
     var savedHighScores = localStorage.getItem("JSQscores");
+    
     var scoreDataObj = {
         name: initialsInput,
         score: score
     } 
+
     if (!savedHighScores) {
         highScores.push(scoreDataObj);
         saveHighScores();
@@ -239,8 +243,7 @@ var highScoreHandler = function(event) {
                 console.log(highScores);
                 saveHighScores();
                 break;
-            }
-            else if (i === (highScores.length - 1)) {
+            } else if (i === (highScores.length - 1)) {
                 highScores.push(scoreDataObj);
                 highScores = highScores.slice(0,5);
                 console.log(highScores);
@@ -265,6 +268,7 @@ var clearAll = function() {
     finalEl.innerHTML ="";
     titleEl.innerHTML ="";
     btnDivEl.innerHTML = "";
+
     return false;
 };
 
@@ -273,8 +277,7 @@ var clickFilter = function(event) {
     if (event.target.matches(".start-button")) {
         timerStart();
         quizStart();
-    }
-    else {
+    } else {
         return false;
     }
 };
